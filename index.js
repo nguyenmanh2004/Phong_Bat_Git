@@ -31,7 +31,7 @@ const makeCommits = async (n) => {
     const randomDays = random.int(0, 6); // Tạo ngày ngẫu nhiên
 
     // Tính toán ngày commit ngẫu nhiên bắt đầu từ 2019-01-01
-    const randomDate = moment("2019-01-01")
+    const randomDate = moment("2024-01-01")
       .add(randomWeeks, "weeks")
       .add(randomDays, "days");
 
@@ -48,4 +48,4 @@ const makeCommits = async (n) => {
   await git.push(); // Đẩy tất cả commit lên GitHub
 };
 
-makeCommits(35); // Gọi hàm để tạo 50,000 commit (hoặc số lượng bạn muốn)
+makeCommits(35); 
